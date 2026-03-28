@@ -459,6 +459,15 @@ img {
     color: var(--ink);
 }
 
+.utility-header {
+    color: #fffaf5;
+}
+
+.utility-header .site-nav a:hover,
+.utility-header .site-nav .is-active {
+    background: rgba(255, 248, 240, 0.16);
+}
+
 .auth-background {
     min-height: 100vh;
     background: linear-gradient(rgba(11, 11, 11, 0.62), rgba(11, 11, 11, 0.62)), url("login.jpg") center/cover no-repeat;
@@ -470,10 +479,10 @@ img {
 .profile-shell {
     width: min(calc(100% - 1.5rem), var(--site-width));
     margin: 0 auto;
-    min-height: 100vh;
+    min-height: calc(100vh - 96px);
     display: grid;
     place-items: center;
-    padding: 2rem 0;
+    padding: 1rem 0 2rem;
 }
 
 .auth-card,
