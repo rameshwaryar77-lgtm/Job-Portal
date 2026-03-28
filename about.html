@@ -3,137 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-
-    <style>
-        .menu{
-    width: 400px;
-    float: left;
-    height: 70px;
-}
-
-ul{
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-ul li{
-    list-style: none;
-    margin-left: 140px;
-    margin-top: 27px;
-    font-size: 30px;
-}
-
-ul li a{
-    text-decoration: none;
-    color: red;
-    font-family: Arial;
-    font-weight: bold;
-    transition: 0.4s ease-in-out;
-}
-
-ul li a:hover{
-    color: #ff7200;
-}
-.about p{
-    font-size: 25px;
-    text-align: center;
-    text-decoration: none;
-    
-    padding-top: 10%;
-    padding-left: 37%;
-}
-.responsibilities h2{
-    margin-left: 10mm;
-}
-.responsibilities  p{
-    font-size: 17px;
-padding-left: 5mm;
-}
-.requirements h2{
-    margin-top: -8%;
-    margin-left: 52%;
-}
-.requirements p{
-    margin-left: 52%;
-    font-size: 18px;
-}
-.footer{
-
-    margin-top: 25%;
-}
-
-.foot-panel1{
-    background-color: #37475a;
-    color: white;
-    height: 50px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.85rem;
-}
-.foot-panel1 a{
-    color: #fff;
-    text-decoration: none;
-}
-.foot-panel3{
-    background-color: #0f1111;
-    color: white;
-    width: 100%;
-    height: 80px;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.copyright{
-    padding-top: 28px;
-    font-size: 18px;
-    text-align: center;
-}
-    </style>
-    
+    <title>About | Career Developer</title>
+    <meta name="description" content="Learn about the mission, responsibilities, and requirements highlighted by the Career Developer portal.">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body style="background-image: url(g.jpg);">
+<body class="theme-about">
+    <header class="site-header page-header">
+        <a class="brand" href="index.html">Career Developer</a>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a class="is-active" href="about.html">About</a>
+            <a href="job.html">Jobs</a>
+            <a href="contact.html">Contact</a>
+            <a class="nav-button" href="form.html">Apply</a>
+        </nav>
+    </header>
 
-    <div class="menu">
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="job.html">JOBS</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-    </div>
-    <div class="about"><p><b>
-    → We are seeking a talented and <br>experienced Web Developer to <br>join our dynamic team. 
-    The <br>ideal candidate will be responsible<br> for designing, coding, and modifying<br> websites, from layout to function, <br>according to the company’s specifications.
-    <br>This role requires excellent programming skills<br> and a passion for creating innovative<br> web solutions.</b></p>
-</div>
-<div class="responsibilities"><h2> Responsibilities:</h2><p><b>
-    - Designing and developing user interfaces using HTML, CSS, and JavaScript<br>
-    - Integrating data from various back-end services and databases<br>
-    - Creating and maintaining software documentation<br>
-    - Collaborating with cross-functional teams to define, design, and ship new features<br>
-    - Troubleshooting and debugging applications to optimize performance<br>
-    </b></p></div>
-    <div class="requirements"><h2>Requirements:</h2><p>
-       <b> - Proven working experience in web programming<br>
-        - Proficiency in HTML, CSS, JavaScript<br>
-        - Experience with responsive and adaptive design<br>
-        - Familiarity with version control systems (e.g., Git)<br>
-        - Excellent problem-solving skills
-        </b></p></div>
-        <footer class="footer">
-            <div class="foot-panel1">
-                <a href="about.html"> Back to Top</a>
-             </div>
-            <div class="foot-panel3">  
-                <div class="copyright">
-                    @1996-2024, careerdeveloper.com, Inc.or its affiliates
-                </div>
-            </div>
-        </footer> 
+    <main class="page-content">
+        <section class="page-hero">
+            <p class="eyebrow">About the opportunity</p>
+            <h1>We highlight practical web roles for people ready to build and contribute.</h1>
+            <p>
+                This portal is centered on web development careers. The featured roles focus on
+                responsive interfaces, strong collaboration, and steady learning in real projects.
+            </p>
+        </section>
+
+        <section class="two-column-grid">
+            <article class="content-card">
+                <h2>Key responsibilities</h2>
+                <ul class="detail-list">
+                    <li>Design and develop user interfaces using HTML, CSS, and JavaScript.</li>
+                    <li>Integrate data from backend services and databases.</li>
+                    <li>Create and maintain clear software documentation.</li>
+                    <li>Collaborate with teams to shape, build, and improve features.</li>
+                    <li>Troubleshoot and debug applications for better performance.</li>
+                </ul>
+            </article>
+
+            <article class="content-card">
+                <h2>What employers look for</h2>
+                <ul class="detail-list">
+                    <li>Hands-on experience with modern web programming fundamentals.</li>
+                    <li>Confidence with HTML, CSS, and JavaScript.</li>
+                    <li>Comfort building responsive and adaptive layouts.</li>
+                    <li>Familiarity with version control tools such as Git.</li>
+                    <li>Clear problem-solving and communication skills.</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="back-link" href="about.html">Back to top</a>
+        <p>1996-2026 Career Developer. Built as a public job portal project.</p>
+    </footer>
 </body>
 </html>

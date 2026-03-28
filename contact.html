@@ -1,124 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Contacts</title>
-    <style>
-        .menu li{
-    margin-top: 3%;
-    margin-left: 8%;
-    display: flex;
-    float: left;
-}
-
-
-ul li{
-    list-style: none;
-    margin-left: 62px;
-    margin-top: 27px;
-    font-size: 25px;
-}
-
-ul li a{
-    text-decoration: none;
-    color: lightpink;
-    font-family: Arial;
-    font-weight: bold;
-    transition: 0.4s ease-in-out;
-}
-
-ul li a:hover{
-    color: #ff7200;
-}
-.designers h1{
-    margin-left: 40%;
-    color: blue;
-    font-size: 50px;
-    text-align: center;
-    padding-top: 15%;
-}
-.developers  a{
-    color: yellow;
-text-decoration: none;
-}
-.developers  a:hover{
-    zoom: 90%;
-    color: springgreen;
-}
-.developers{
-    font-size: 45px;
-    list-style: none;
-    margin-left: 55%;
-
-}
-.image img{
-margin-top: -22%;
-    margin-left: 2%;
-}
-.footer{
-    margin-top: 10%;
-}
-.foot-panel1{
-    background-color: #37475a;
-    color: white;
-    height: 50px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.85rem;
-}
-.foot-panel1 a{
-    color: #fff;
-    text-decoration: none;
-}
-.foot-panel3{
-    background-color: #0f1111;
-    color: white;
-    width: 100%;
-    height: 80px;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.copyright{
-    padding-top: 28px;
-    font-size: 18px;
-    text-align: center;
-}
-
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Career Developer</title>
+    <meta name="description" content="Meet the developers behind the Career Developer job portal project.">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body style="background-image: url(a.jpg);">
-<div class="menu">
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="job.html">JOBS</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
-            </div>
-            <div class="designers">
-            	<h1>DEVELOPED BY:</h1>
-            </div>
-            <div class="developers">
-            	<li><a href="rameshwar.html">ℝ𝕒𝕞𝕖𝕤𝕙𝕨𝕒𝕣 𝕐𝕒𝕕𝕒𝕧</a></li>
-            	<li><a href="ram.html">ℝ𝕒𝕞𝕤𝕒𝕥𝕚𝕤𝕙 𝕐𝕒𝕕𝕒𝕧</a></li>
-                <li><a href="birjesh.html">𝔹𝕣𝕚𝕛𝕖𝕤𝕙 𝔾𝕦𝕡𝕥𝕒</a></li>
-            </div>
- <div class="image">
-            	<img src="c.jpg">
-            </div>
-            <footer class="footer">
-                <div class="foot-panel1">
-                    <a href="contact.html"> Back to Top</a>
-                 </div>
-                <div class="foot-panel3">  
-                    <div class="copyright">
-                        @1996-2024, careerdeveloper.com, Inc.or its affiliates
-                    </div>
+<body class="theme-contact">
+    <header class="site-header page-header">
+        <a class="brand" href="index.html">Career Developer</a>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="job.html">Jobs</a>
+            <a class="is-active" href="contact.html">Contact</a>
+            <a class="nav-button" href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <section class="page-hero">
+            <p class="eyebrow">Project team</p>
+            <h1>The portal was built by a small group focused on frontend practice and job discovery.</h1>
+            <p>
+                Use the profile pages below to explore the contributors featured in this project.
+            </p>
+        </section>
+
+        <section class="contact-layout">
+            <div class="content-card team-card">
+                <h2>Developers</h2>
+                <div class="team-list">
+                    <a href="rameshwar.html">Rameshwar Yadav</a>
+                    <a href="ram.html">Ramesh Yadav</a>
+                    <a href="birjesh.html">Birjesh Gupta</a>
                 </div>
-            </footer> 
+            </div>
+
+            <aside class="content-card image-card">
+                <img src="c.jpg" alt="Team illustration for the Career Developer portal">
+            </aside>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="back-link" href="contact.html">Back to top</a>
+        <p>1996-2026 Career Developer. Built as a public job portal project.</p>
+    </footer>
 </body>
 </html>

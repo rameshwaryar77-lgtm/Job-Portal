@@ -1,282 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Webpage Design</title>
-    <style>
-        *{
-    margin: 0;
-    padding: 0;
-}
-
-.main{
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-}
-
-.navbar{
-    width: 1200px;
-    height: 75px;
-    margin: auto;
-}
-
-.icon{
-    width: 200px;
-    float: left;
-    height: 70px;
-}
-
-.logo{
-    color: #ff7200;
-    font-size: 60px;
-    font-family: Arial;
-    padding-left: 20px;
-    float: left;
-    padding-top: 10px;
-    margin-top: 5px;
-}
-
-.menu{
-    width: 400px;
-    float: left;
-    height: 70px;
-}
-
-ul{
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-ul li{
-    list-style: none;
-    margin-left: 80px;
-    margin-top: 40px;
-    font-size: 20px;
-}
-
-ul li a{
-    text-decoration: none;
-    color: yellow;
-    font-family: Arial;
-    font-weight: bold;
-    transition: 0.4s ease-in-out;
-}
-
-ul li a:hover{
-    color: #ff7200;
-}
-
-.search{
-    margin-top: 16px;
-    width: 330px;
-    float: left;
-    margin-left: 270px;
-}
-
-.srch{
-    font-family: 'Times New Roman';
-    height: 40px;
-    background: transparent;
-    border: 2px solid #ff7200;
-    margin-top: 13px;
-    border-right: none;
-    font-size: 16px;
-    float: left;
-    padding: 15px;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
-}
-
-.btn{
-    width: 100px;
-    height: 40px;
-    background: #ff7200;
-    border: 2px solid #ff7200;
-    margin-top: 13px;
-    color: #fff;
-    font-size: 20px;
-    border-bottom-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-.btn:hover{
-    color: #000;
-}
-.content{
-    width: 1200px;
-    height: auto;
-    margin: auto;
-    color: #fff;
-    position: relative;
-}
-
-.content .par{
-    padding-left: 20px;
-    padding-bottom: 25px;
-    font-family: Arial;
-    letter-spacing: 1.2px;
-    line-height: 30px;
-}
-
-.content h1{
-    font-family: 'Times New Roman';
-    font-size: 50px;
-    padding-left: 20px;
-    margin-top: 9%;
-    letter-spacing: 2px;
-}
-
-.content .cn{
-    width: 160px;
-    height: 40px;
-    background: #ff7200;
-    border: none;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    font-size: 18px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .4s ease;
-    
-}
-
-.content .cn a{
-    text-decoration: none;
-    color: #000;
-    transition: .3s ease;
-}
-
-.cn:hover{
-    background-color: #fff;
-}
-
-.content span{
-    color: #ff7200;
-    font-size: 65px
-}
-
-  .back-video{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-  }
-  @media (min-aspect-ratio:16/9) {
-    .back-video{
-        width: 100%;
-        height: auto;
-    }
-  }
-  
-.foot-panel1{
-    background-color: #37475a;
-    color: white;
-    height: 50px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.85rem;
-}
-.foot-panel1 a{
-    color: #fff;
-    text-decoration: none;
-}
-
-.foot-panel2{
-    background-color: black;
-    color: white;
-    height: 4cm;
-}
-
-.foot-panel2 ul{
-margin-top: 6mm;
-    margin-left: 15%;
-    display: flex;
-}
-.foot-panel3{
-    background-color: #0f1111;
-    color: white;
-    width: 100%;
-    height: 80px;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.copyright{
-    padding-top: 28px;
-    font-size: 18px;
-    text-align: center;
-}
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Developer | Job Portal</title>
+    <meta name="description" content="Explore jobs, improve your skills, and apply through the Career Developer job portal.">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    
-    <div class="main">
-        <div class="video-container">
-            <video autoplay loop muted plays-inline class="back-video">
-              <source src="video.mp4" type="video/mp4">
-           </video>
-         </div>
-        <div class="navbar">
-            <div class="icon">
-                <h2 class="logo">Career Developer</h2>
+<body class="theme-home">
+    <div class="hero-shell">
+        <video autoplay loop muted playsinline class="hero-video" aria-hidden="true">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+
+        <header class="site-header">
+            <a class="brand" href="index.html">Career Developer</a>
+            <nav class="site-nav" aria-label="Main navigation">
+                <a class="is-active" href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="job.html">Jobs</a>
+                <a href="contact.html">Contact</a>
+                <a class="nav-button" href="login.html">Login</a>
+            </nav>
+        </header>
+
+        <main class="hero-content">
+            <p class="eyebrow">Build momentum for your future</p>
+            <h1>Search jobs, sharpen skills, and move toward work that fits you.</h1>
+            <p class="hero-copy">
+                Career Developer brings together practical opportunities, simple application flows,
+                and a clear next step for new web professionals.
+            </p>
+
+            <div class="hero-actions">
+                <a class="button button-primary" href="job.html">Browse Jobs</a>
+                <a class="button button-secondary" href="form.html">Apply Now</a>
             </div>
 
-            <div class="menu">
-            <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="job.html">JOBS</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
-            </div>
-
-            <div class="search">
-                <input class="srch" type="search" name="" placeholder="Search Job Type" style="color: whitesmoke;">
-                <a href="job.html"> <button class="btn">Search</button></a>
-            </div>
-
-        </div> 
-        <div class="content">
-            <h1>Search Job Portal & <br><span>Develop</span> <br>Your Skills for your future</h1>
-            <p class="par">SUCCESS COMES FROM TAKING<br> THE INITATIVE AND FOLLOWING UP...<br>PERSISTING...<br> WHAT SIMPLE ACTION COULD <br>YOU TAKE TODAY TO PRODUCE <br> A NEW MOMENTUM TOWARDS SUCCESS IN <br>YOUR LIFE?</p>
-
-                <button class="cn"><a href="form.html">JOIN US</a></button>
-                    </div>
+            <section class="hero-stats" aria-label="Portal highlights">
+                <article>
+                    <strong>6+</strong>
+                    <span>Fresh job roles</span>
+                </article>
+                <article>
+                    <strong>4</strong>
+                    <span>Main career pages</span>
+                </article>
+                <article>
+                    <strong>1</strong>
+                    <span>Simple application flow</span>
+                </article>
+            </section>
+        </main>
     </div>
-   <footer>
-    <div class="foot-panel1">
-       <a href="index.html"> Back to Top</a>
-    </div>
-    <div class="foot-panel2">
-        <ul>
-            <p>  <b>Get to know us:</b><br>
-          <a>Carrers</a><br>
-                     <a>Blog</a><br>
-                         <a>About careerdeveloper</a><br>
-                            <a>Investor relations</a></p>
-        </ul>
-       <ul>
-        <p><b> Your career developer.in</b><br>
-             <a>Your Job lists</a><br>
-                  <a>your recently viewed job</a></p>
-        </ul>
-        <ul>
-            <p><b>Career developer.com</b><br>
-                 <a>your lists</a><br>
-                 <a>find a gift</a><br>
-                    <a>browsing story</a><br>
-                     <a>your account</a></p>
-        </ul>
-    </div>   
-    <div class="foot-panel3">  
-        <div class="copyright">
-            @1996-2024, careerdeveloper.com, Inc.or its affiliates
+
+    <section class="feature-section">
+        <div class="section-heading">
+            <p class="eyebrow">Why this portal works</p>
+            <h2>A cleaner path from interest to application</h2>
         </div>
-    </div>
-</footer>
+
+        <div class="feature-grid">
+            <article class="feature-card">
+                <h3>Focused job search</h3>
+                <p>Review curated frontend and web roles without digging through clutter.</p>
+            </article>
+            <article class="feature-card">
+                <h3>Skill-first direction</h3>
+                <p>See the technologies employers expect and align your learning with real openings.</p>
+            </article>
+            <article class="feature-card">
+                <h3>Fast application route</h3>
+                <p>Move from discovery to application in a few clicks with a simple flow.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="cta-band">
+        <div>
+            <p class="eyebrow">Ready to begin?</p>
+            <h2>Start with the latest openings and send your application today.</h2>
+        </div>
+        <a class="button button-primary" href="job.html">View Open Roles</a>
+    </section>
+
+    <footer class="site-footer">
+        <a class="back-link" href="index.html">Back to top</a>
+        <p>1996-2026 Career Developer. Built as a public job portal project.</p>
+    </footer>
 </body>
 </html>
